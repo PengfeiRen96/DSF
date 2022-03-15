@@ -6,7 +6,7 @@ JOINT = {
 }
 
 STEP = {
-    'nyu': 20,
+    'nyu': 10,
     'msra': 5,
     'icvl': 4,
     'shrec':5,
@@ -14,7 +14,7 @@ STEP = {
 }
 
 EPOCH = {
-    'nyu': 30,
+    'nyu': 15,
     'msra': 10,
     'icvl': 8,
     'shrec':10,
@@ -33,9 +33,9 @@ class Config(object):
     root_dir = '/home/pfren/dataset/hand/'# R3900/P100
     dataset = 'nyu'# ['nyu'，'icvl','msra', 'shrec']
     model_save = ''
-    add_info = 'Finetune-CCSSL-30'
+    add_info = 'Finetune-Stage'
     train_stage = 'Finetune'
-    stage_num = 1
+    stage_num = 2
     mask = True
 
     save_mesh = False
@@ -55,9 +55,9 @@ class Config(object):
     tansferNet_pth = ''
     # finetune_dir = '/home/pfren/pycharm/hand_mixed/checkpoint/nyu/MANO-pretrain-alljoint-synth/best.pth'
     # finetune_dir = './checkpoint/nyu/Finetune-Stage-v2/latest.pth'
-    finetune_dir = './checkpoint/nyu/Pretrain-RotTransMean-xyz/latest.pth'
-    # finetune_dir = './checkpoint/nyu/Pretrain-Stage-NoRemap/latest.pth'
-    # finetune_dir = './checkpoint/nyu/Pretrain-RotTransMean-xyz-2stage/latest.pth'
+    # finetune_dir = './checkpoint/nyu/Pretrain-RotTransMean-xyz/best.pth'
+    # finetune_dir = './checkpoint/nyu/Pretrain-Stage-NoRemap/best.pth'
+    finetune_dir = './checkpoint/nyu/Pretrain-RotTransMean-xyz-2stage/best.pth'
     # tansferNet_pth = '/home/pfren/pycharm/pytorch-CycleGAN-and-pix2pix/checkpoints/ada-10/'
     # tansferNet_pth = '/home/pfren/pycharm/pytorch-CycleGAN-and-pix2pix/checkpoints/task-10/'
     # tansferNet_pth = '/home/pfren/pycharm/pytorch-CycleGAN-and-pix2pix/checkpoints/nyu_ori_cyclegan-40epoch/'
@@ -69,8 +69,8 @@ class Config(object):
     mano_model_path = './MANO/'  # R3900
 
     save_dir = './'
-    train_img_type = 'real' #['real','synth','render']
-    test_img_type = 'real' #['real','synth','render']
+    train_img_type = 'real'
+    test_img_type = 'real'
 
     joint_num = JOINT[dataset]
     cube_size = CUBE[dataset]
@@ -80,18 +80,18 @@ class Config(object):
     batch_size = 32
     input_size = 128
 
-    center_type = 'refine'  # ['joint_mean', 'joint', 'refine', 'mass', 'random']
-    loss_type = 'L1Loss'  # ['L1Loss', 'MSE']
+    center_type = 'refine'  # ['joint_mean', 'refine']
+    loss_type = 'L1Loss'
     augment_para = [10, 0.2, 180]
 
     lr = 0.001
     max_epoch = EPOCH[dataset]
     step_size = STEP[dataset]
-    opt = 'adamw'  # ['sgd', 'adam', 'adamw', 'rmsprop','adabound','adaBelief']
-    scheduler = 'step'  # ['auto', 'step', 'constant']
+    opt = 'adamw'
+    scheduler = 'step'
 
     net = 'ResNet_stage_18'
-    feature_type = ['offset']  #['weight_offset', 'weight_pos','heatmap_depthoffset','plainoffset_depth','plainoffset_depthoffset', 'offset']
+    feature_type = ['offset']
     feature_para = [0.8]
 
 
