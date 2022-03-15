@@ -771,7 +771,7 @@ class Trainer(object):
         depth_loss_mask = crop_img_r.lt(0.99) | mano_img_r_crop.lt(0.99)
         depth_diff = torch.abs(crop_img_r-mano_img_r_crop)*depth_loss_mask
         m2d_loss_batch = depth_diff.sum(-1).sum(-1) / (depth_loss_mask.float().sum(-1).sum(-1)+1e-8)
-        m2d_loss = d2m_loss_batch.mean() * 0.1
+        m2d_loss = m2d_loss_batch.mean() * 0.1
 
         ################# d2m loss ###############
         pd2m_loss_joint = JointICPLoss(mano_mesh_r, joint_pcl, self.RenderNet.mano_layer.joint_faces, segment)
