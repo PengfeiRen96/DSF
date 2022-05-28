@@ -21,7 +21,7 @@ DSF/
 ```
 ### NYU Dataset
 - Download and decompress [NYU](https://jonathantompson.github.io/NYU_Hand_Pose_Dataset.htm) and modify the `root_dir` in `config.py` according to your setting.
-- Download the center files [Google Drive]() and put them into the `train` and `test` directories of NYU respectively.
+- Download the center files [Google Drive](https://drive.google.com/drive/folders/1POQ5g3LnzAtXCvtzVF_WJoZuxLoseKuX?usp=sharing) and put them into the `train` and `test` directories of NYU respectively.
 - Your folder structure should look like this:
 ```
 .../
