@@ -1,7 +1,7 @@
 # DSF
 
 ## Installation
-###Prerequisites
+### Prerequisites
 
 - Python >= 3.8
 - PyTorch >= 1.10
@@ -21,7 +21,7 @@ DSF/
 ```
 ### NYU Dataset
 - Download and decompress [NYU](https://jonathantompson.github.io/NYU_Hand_Pose_Dataset.htm) and modify the `root_dir` in `config.py` according to your setting.
-- Download the [center files](https://drive.google.com/drive/folders/1moW1nkL7Ey6C_6XAEQbWZEIoZN1uxlfu?usp=sharing) of NYU and put them into the `train` and `test` directories of NYU respectively.
+- Download the center files [Google Drive]() and put them into the `train` and `test` directories of NYU respectively.
 - Your folder structure should look like this:
 ```
 .../
