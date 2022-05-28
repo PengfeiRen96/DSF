@@ -21,7 +21,7 @@ DSF/
 ```
 ### NYU Dataset
 - Download and decompress [NYU](https://jonathantompson.github.io/NYU_Hand_Pose_Dataset.htm) and modify the `root_dir` in `config.py` according to your setting.
-- Download the center files [Google Drive](https://drive.google.com/drive/folders/1POQ5g3LnzAtXCvtzVF_WJoZuxLoseKuX?usp=sharing) and put them into the `train` and `test` directories of NYU respectively.
+- Download the center files [Google Drive(https://drive.google.com/drive/folders/1POQ5g3LnzAtXCvtzVF_WJoZuxLoseKuX?usp=sharing)] and put them into the `train` and `test` directories of NYU respectively.
 - Your folder structure should look like this:
 ```
 .../
@@ -38,9 +38,9 @@ DSF/
       ...
 ```
 ### Pretrained Model
-- Download our pre-trained model [Google Drive](https://drive.google.com/drive/folders/1XCU3ZifvaF47Fih9y-i47kTshwvcNzii)
-- Download our pre-trained model with only synthetic data [Google Drive](https://drive.google.com/drive/folders/1VQDbboU8dVSMi2ZA26mkkDJ3jOPxDTWy) 
-- Download the Consis-CycleGAN model [Google Drive](https://drive.google.com/drive/folders/1tyiLc8isxyfg7vi8cS9F4gmCzrSmceBc) 
+- Download our pre-trained model [Google Drive (https://drive.google.com/drive/folders/1XCU3ZifvaF47Fih9y-i47kTshwvcNzii)]
+- Download our pre-trained model with only synthetic data [Google Drive(https://drive.google.com/drive/folders/1VQDbboU8dVSMi2ZA26mkkDJ3jOPxDTWy)]
+- Download the Consis-CycleGAN model [Google Drive(https://drive.google.com/drive/folders/1tyiLc8isxyfg7vi8cS9F4gmCzrSmceBc)]
 
 ## Running DSF
 ### Evaluation
