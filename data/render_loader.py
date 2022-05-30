@@ -22,8 +22,7 @@ from matplotlib import cm
 import matplotlib.colors as colors
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 from render_model.transfer import define_Encoder, define_Decoder,define_G
-# # mpl.use('TkAgg')
-import pickle
+
 
 joint_select = np.array([0, 1, 3, 5, #0-3
                          6, 7, 9, 11,#4-7
@@ -1047,8 +1046,8 @@ class loader(Dataset):
         device = uvd.device
         cube_size_t = cube.to(device).view(batch_size, 1, 3).repeat(1, point_num, 1)
         center_t = center.to(device).view(batch_size, 1, 3).repeat(1, point_num, 1)
-        M_t = m.to(device).view(batch_size, 1, 3, 3).repeat(1, point_num, 1, 1)
-        M_inverse = torch.inverse(M_t)
+        M_t = m.to(device).view(batch_size, 1, 3, 3)
+        M_inverse = torch.inverse(M_t).repeat(1, point_num, 1, 1)
 
         uv_unnormal = (uvd[:, :, 0:2] + 1) * (self.img_size / 2)
         d_unnormal = (uvd[:, :, 2:]) * (cube_size_t[:, :, 2:] / 2.0) + center_t[:, :, 2:]
@@ -1062,8 +1061,8 @@ class loader(Dataset):
         device = uvd.device
         cube_size_t = cube.to(device).view(batch_size, 1, 3).repeat(1, point_num, 1)
         center_t = center.to(device).view(batch_size, 1, 3).repeat(1, point_num, 1)
-        M_t = m.to(device).view(batch_size, 1, 3, 3).repeat(1, point_num, 1, 1)
-        M_inverse = torch.inverse(M_t)
+        M_t = m.to(device).view(batch_size, 1, 3, 3)
+        M_inverse = torch.inverse(M_t).repeat(1, point_num, 1, 1)
 
         uv_unnormal= (uvd[:, :, 0:2] + 1) * (self.img_size / 2)
         d_unnormal = (uvd[:, :, 2:]) * (cube_size_t[:, :, 2:] / 2.0) + center_t[:, :, 2:]
@@ -1697,6 +1696,7 @@ class nyu_loader_train_test(loader):
     def __len__(self):
         return len(self.all_img_path)
 
+
 class nyu_CCSSL_loader(loader):
     def __init__(self, root_dir, phase, type='real', view=0, aug_para=[0, 0, 0], pesudo_name='CCSSL',
                  img_size=128, cube_size=[250, 250, 250], center_type='refine', joint_num=14, loader=nyu_reader):
@@ -1798,6 +1798,7 @@ class nyu_CCSSL_loader(loader):
 
     def __len__(self):
         return len(self.all_joints_uvd)
+
 
 class nyu_loader(loader):
     def __init__(self, root_dir, phase, type='real', mask_para=0.1, view=0, aug_para=[10, 0.1, 180],
