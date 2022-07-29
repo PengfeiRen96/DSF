@@ -1,4 +1,5 @@
-# DSF
+# A Dual-Branch Self-Boosting Framework for Self-Supervised 3D Hand Pose Estimation (TIP2022)
+
 
 ## Installation
 ### Prerequisites
