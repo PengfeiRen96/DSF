@@ -13,6 +13,7 @@ Pengfei Ren, Haifeng Sun, Jiachang Hao, Qi Qi, Jingyu Wang, Jianxin Liao <br />
 Comparison with annotations from MSRA and ICVL datasets
 
 ![demo1](pic/ICVL.gif)
+![demo2](pic/MSRA.gif)
 
 ## Installation
 ### Prerequisites
