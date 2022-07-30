@@ -7,7 +7,9 @@ Pengfei Ren, Haifeng Sun, Jiachang Hao, Qi Qi, Jingyu Wang, Jianxin Liao <br />
 [[Paper]](https://ieeexplore.ieee.org/document/9841448)
 
 <img src="S1-introduction.jpg" width = 900 align=middle>
+
 ## Installation
+
 Comparison with annotations from MSRA and ICVL datasets
 <gif src="pic/icvl.gif" width = 900 align=middle>
 
