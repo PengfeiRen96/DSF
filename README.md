@@ -6,7 +6,7 @@ This is the official PyTorch implementation code. For technical details, please 
 Pengfei Ren, Haifeng Sun, Jiachang Hao, Qi Qi, Jingyu Wang, Jianxin Liao <br />
 [[Paper]](https://ieeexplore.ieee.org/document/9841448)
 
-<img src="S1-introduction.jpg" width = 900 align=middle>
+<img src="pic/S1-introduction.jpg" width = 900 align=middle>
 
 ## Comparison with annotations from ICVL and MSRA datasets
 Compared with semi-automatic annotation methods, our self-supervised method can generate more accurate and robust 3D hand pose and hand mesh.
