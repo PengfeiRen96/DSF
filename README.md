@@ -6,7 +6,7 @@ This is the official PyTorch implementation code. For technical details, please 
 Pengfei Ren, Haifeng Sun, Jiachang Hao, Qi Qi, Jingyu Wang, Jianxin Liao <br />
 [[Paper]](https://ieeexplore.ieee.org/document/9841448)
 
-<img src="introduction.jpg" width = 700 align=middle>
+<img src="S1-introduction.jpg" width = 900 align=middle>
 
 ## Installation
 ### Prerequisites
