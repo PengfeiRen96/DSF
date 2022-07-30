@@ -8,9 +8,8 @@ Pengfei Ren, Haifeng Sun, Jiachang Hao, Qi Qi, Jingyu Wang, Jianxin Liao <br />
 
 <img src="S1-introduction.jpg" width = 900 align=middle>
 
-## Installation
-
-Comparison with annotations from MSRA and ICVL datasets
+## Comparison with annotations from ICVL and MSRA datasets
+Compared with semi-automatic annotation methods, our self-supervised method can generate more accurate and robust hand poses and hand models
 
 ![demo1](pic/ICVL.gif)
 
