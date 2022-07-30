@@ -1,6 +1,6 @@
 # A Dual-Branch Self-Boosting Framework for Self-Supervised 3D Hand Pose Estimation (TIP2022)
 
-<img src="introduction.jpg" width = 900 align=middle>
+<img src="introduction.jpg" width = 700 align=middle>
 
 ## Installation
 ### Prerequisites
