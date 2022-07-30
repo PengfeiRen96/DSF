@@ -1,4 +1,10 @@
-# A Dual-Branch Self-Boosting Framework for Self-Supervised 3D Hand Pose Estimation (TIP2022) [[Paper]](https://ieeexplore.ieee.org/document/9841448)
+# A Dual-Branch Self-Boosting Framework for Self-Supervised 3D Hand Pose Estimation (TIP2022) 
+
+This is the official PyTorch implementation code. For technical details, please refer to:
+
+**A Dual-Branch Self-Boosting Framework for Self-Supervised 3D Hand Pose Estimation** <br />
+Pengfei Ren, Haifeng Sun, Jiachang Hao, Qi Qi, Jingyu Wang, Jianxin Liao <br />
+[[Paper]](https://ieeexplore.ieee.org/document/9841448)
 
 <img src="introduction.jpg" width = 700 align=middle>
 
