@@ -86,7 +86,9 @@ If you find our work useful in your research, please citing:
   journal={IEEE Transactions on Image Processing}, 
   title={A Dual-Branch Self-Boosting Framework for Self-Supervised 3D Hand Pose Estimation}, 
   year={2022},
-  pages={1-1},
+  volume={31},
+  number={},
+  pages={5052-5066},
   doi={10.1109/TIP.2022.3192708}}
 ```
 
