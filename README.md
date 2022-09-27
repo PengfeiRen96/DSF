@@ -10,11 +10,15 @@ Pengfei Ren, Haifeng Sun, Jiachang Hao, Qi Qi, Jingyu Wang, Jianxin Liao <br />
 
 ## 
 
-↓↑
+
  |  Method   |   Modality   | SHREC 14| SHREC 28 | DHG 14 | DHG 28 |
  | ---       | :---:        | :---: | :---: |:---: | :---: |
- | PointLSTM | Point clouds | 95.9  | 94.7  | -    | -     |
- | Res-TCN   | Skeleton     | 91.1  | 87.3  | 86.9 | 83.6 |
+ | PointLSTM    | Point clouds | 95.9  | 94.7  | -    | -     |
+ | ST-GCN       | Skeleton     | 92.7  | 87.7  | 91.2 | 87.1 |
+ | STA-Res-TCN  | Skeleton     | 93.6  | 90.7  | 89.2 | 85.0 |
+ | HPEV         | Skeleton     | 94.9  | 92.3  | 92.5 | 88.9 |
+ | DS-STA       | Skeleton     | 94.4  | 90.7  | 91.9 | 88.0 |
+ | DS-STA (DSF) | Skeleton     | 96.8  | 95.0  | 96.3 | 95.9 |
 
 ## Comparison with annotations from ICVL and MSRA datasets
 Compared with semi-automatic annotation methods, our self-supervised method can generate more accurate and robust 3D hand pose and hand mesh.
