@@ -18,7 +18,7 @@ Pengfei Ren, Haifeng Sun, Jiachang Hao, Qi Qi, Jingyu Wang, Jianxin Liao <br />
  | STA-Res-TCN  | Skeleton     | 93.6  | 90.7  | 89.2 | 85.0 |
  | HPEV         | Skeleton     | 94.9  | 92.3  | 92.5 | 88.9 |
  | DS-STA       | Skeleton     | 94.4  | 90.7  | 91.9 | 88.0 |
- | DS-STA (DSF) | Skeleton     | 96.8  | 95.0  | 96.3 | 95.9 |
+ | DS-STA (DSF) | Skeleton     | 96.8 <\sub>2.4 | 95.0  | 96.3 | 95.9 |
 
 ## Comparison with annotations from ICVL and MSRA datasets
 Compared with semi-automatic annotation methods, our self-supervised method can generate more accurate and robust 3D hand pose and hand mesh.
