@@ -11,8 +11,8 @@ Pengfei Ren, Haifeng Sun, Jiachang Hao, Qi Qi, Jingyu Wang, Jianxin Liao <br />
 ## 
 
 ↓↑
- |  Method   |   Modality   | SHREC 14| SHREC 28 | DHG 14 | DHG 28 
- |-----------|--------------|---------|----------|--------|--------
+ |  Method   |   Modality   | SHREC 14| SHREC 28 | DHG 14 | DHG 28 |
+ | ---- | ---- | ---- | ---- | ---- | ---- |
  | PointLSTM | Point clouds | 95.9 | 94.7 | - | - |
  | Res-TCN | Skeleton | 91.1 | 87.3 | 86.9 | 83.6 |
 
