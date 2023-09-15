@@ -55,6 +55,7 @@ DSF/
 ### NYU Dataset
 - Download and decompress [NYU](https://jonathantompson.github.io/NYU_Hand_Pose_Dataset.htm) and modify the `root_dir` in `config.py` according to your setting.
 - Download the center files [[Google Drive](https://drive.google.com/drive/folders/1POQ5g3LnzAtXCvtzVF_WJoZuxLoseKuX?usp=sharing)] and put them into the `train` and `test` directories of NYU respectively.
+- Download the MANO parameter file of the NYU dataset we generated [MANO Files](https://github.com/PengfeiRen96/DSF/releases/tag/Dataset)
 - Your folder structure should look like this:
 ```
 .../
@@ -69,8 +70,11 @@ DSF/
       center_test_1_refined.txt
       center_test_2_refined.txt
       ...
+    posePara_lm_collosion/
+      nyu-train-0-pose.txt
+      ...
 ```
-- Download the MANO parameter file of the NYU dataset we generated [MANO](https://github.com/PengfeiRen96/DSF/releases/tag/Dataset)
+
 ### Pretrained Model
 - Download our pre-trained model with self-supervised training [[Google Drive](https://drive.google.com/drive/folders/1XCU3ZifvaF47Fih9y-i47kTshwvcNzii?usp=sharing)]
 - Download our pre-trained model with only synthetic data [[Google Drive](https://drive.google.com/drive/folders/1VQDbboU8dVSMi2ZA26mkkDJ3jOPxDTWy?usp=sharing)]
