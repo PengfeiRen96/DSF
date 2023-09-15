@@ -70,6 +70,7 @@ DSF/
       center_test_2_refined.txt
       ...
 ```
+- Download the MANO parameter file of the NYU dataset we generated [MANO](https://github.com/PengfeiRen96/DSF/releases/tag/Dataset)
 ### Pretrained Model
 - Download our pre-trained model with self-supervised training [[Google Drive](https://drive.google.com/drive/folders/1XCU3ZifvaF47Fih9y-i47kTshwvcNzii?usp=sharing)]
 - Download our pre-trained model with only synthetic data [[Google Drive](https://drive.google.com/drive/folders/1VQDbboU8dVSMi2ZA26mkkDJ3jOPxDTWy?usp=sharing)]
